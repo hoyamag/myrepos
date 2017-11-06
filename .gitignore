@@ -1,3 +1,5 @@
+# python byte code
+*.pyc
 # vim trush
 *.un~
 
