@@ -2,6 +2,10 @@
 *.pyc
 # vim trush
 *.un~
+# visual studio trush
+*.sln
+*.vcxproj
+*.vcxproj.filters
 
 ## https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 ##
