@@ -1,5 +1,7 @@
-# exe
+
+# executional
 *.exe
+*.out
 # python byte code
 *.pyc
 # vim trush
