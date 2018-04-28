@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cp ~/myrepo/code/ProCon/template/main.cpp $1.cpp
