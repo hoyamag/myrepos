@@ -10,6 +10,8 @@
 *.sln
 *.vcxproj
 *.vcxproj.filters
+# visual studio code trush
+.vscode
 
 ## https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 ##
