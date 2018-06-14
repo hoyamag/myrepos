@@ -1,7 +1,7 @@
 # vagrant sshしたらまっさらなVMがそこにあった
 環境 
-Ubuntu 16.04 LTS
-vagrant 2.1.1
+Ubuntu 16.04 LTS  
+vagrant 2.1.1  
 VirtualBox Graphical User Interface Version 5.1.34_Ubuntu r121010
 
 # homeディレクトリ以下にあったディレクトリが消えている
@@ -69,10 +69,10 @@ $ vagrant ssh
 手順がわかったので直します。
 
 # 結論
-直りました。
-実際の手順を知りたい方は「やった手順(ログ目的のため失敗手順含む)」を参照してください。
+直りました。  
+実際の手順を知りたい方は「やった手順(ログ目的のため失敗手順含む)」を参照してください。  
 結論としては[Vagrant lost all of my VMs · Issue #5144 · hashicorp/vagrant · GitHub](https://github.com/hashicorp/vagrant/issues/5144)
-を見るのが一番でした。
+を見るのが一番でした。  
 再発防止策としては、下記が有効そうな気がします(試してません)。
 
 * 'vagrant up'する前に'VBoxManage list vms'してVMが紐付いているか確認する
@@ -113,14 +113,14 @@ drwx------  3 hoyamag hoyamag 4096  6月 11 09:34 rails_tutorial_default_1528677
 を見ると、”'VBoxManage registervm'で直せたよ。詳細はここを見てね”みたいなことが書いてあるのでそこを見ます。
 [Chapter�8.�VBoxManage](http://www.virtualbox.org/manual/ch08.html#vboxmanage-registervm)/.
 「XMLファイルに書かれたVM定義をVirtualBoxにインポートできます」みたいなことが書いてます。
-syntaxが書いてないので
-'VBoxManage --version > ~/a.txt'
-'vim ~/a.txt'
+syntaxが書いてないので  
+'VBoxManage --version > ~/a.txt'  
+'vim ~/a.txt'  
 してregistervmオプションの使い方を見ます。ファイルネームを指定すれば良さそうです。
 
-'VBoxManage registervm <fullpath.vbox>'
-実行したらエラーメッセージもなく終わりました(fullpathは長かったので除いています)。
-'VirtualBox'
+'VBoxManage registervm <fullpath.vbox>'  
+を実行したらエラーメッセージもなく終わりました(fullpathは長かったので除いています)。  
+'VirtualBox'  
 してVirtualBoxのGUIを見ると目的のVMがリストされているので大丈夫そうです。
 
 いつも'vagrant up'してたディレクトリで'vagrant up'します。
