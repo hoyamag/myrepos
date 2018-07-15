@@ -12,6 +12,9 @@
 *.vcxproj.filters
 # visual studio code trush
 .vscode
+# I don't know why
+Code/
+VirtualBox/
 
 ## https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 ##
