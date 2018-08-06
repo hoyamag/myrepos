@@ -1,0 +1,8 @@
+#!/bin/bash
+# $1 : directory name 
+mkdir $1
+newcpp $1/a
+newcpp $1/b
+newcpp $1/c
+newcpp $1/d
+cp -R ~/repoOfMine/code/ProCon/template/vscode $1/.vscode
