@@ -1,3 +1,2 @@
 #!/bin/bash
-
-cp ~/repoOfMine/code/ProCon/template/main.cpp $1.cpp
+cp $PROCON_TEMPLATE_PATH/main.cpp $1.cpp
