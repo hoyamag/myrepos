@@ -1,2 +1,5 @@
 #!/bin/bash
-cp $PROCON_TEMPLATE_PATH/main.cpp $1.cpp
+# Move procon template file to all given arguments
+for var in "$@" do
+    cp $PROCON_TEMPLATE_PATH/main.cpp $var.cpp
+done
